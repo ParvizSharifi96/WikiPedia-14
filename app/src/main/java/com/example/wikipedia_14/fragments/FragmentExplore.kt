@@ -34,6 +34,17 @@ class FragmentExplore : Fragment() {
             // Explore Section =>
 
             ItemPost(
+                "https://www.scania.com/content/dam/group/press-and-media/news/2022/21161-009_thumb.jpg.transform/Rend_1200X630/image.jpg",
+                "Scania",
+                "Truck manufacturing group",
+                        "Scania is a world-leading provider of transport solutions. Together with our partners and customers we are driving the shift towards a sustainable transport system.\n" +
+                        "In 2021, we delivered 85,930 trucks, 4,436 buses as well as 11,786 industrial and marine power systems to our customers. Net sales totalled to over SEK  146 billion, of which over 20 percent were services related. Founded in 1891, Scania now operates in more than 100 countries and employs some 54,000 people. Research and development are mainly concentrated in Sweden. Production takes place in Europe and Latin America with regional product centres in Africa, Asia and Eurasia. Scania is part of TRATON GROUP."
+                        ,
+                  false,
+                ""
+            ),
+
+            ItemPost(
                 "https://upload.wikimedia.org/wikipedia/commons/0/0d/Jamiroquai_(6606879587).jpg",
                 "Jamiroquai",
                 "British acid jazz band",
@@ -59,6 +70,19 @@ class FragmentExplore : Fragment() {
                         "\n" +
                         "Meeker became convinced that the Oregon Trail was being forgotten, and he determined to bring it publicity so it could be marked and monuments erected. In 1906–1908, while in his late 70s, he retraced his steps along the Oregon Trail by wagon, seeking to build monuments in communities along the way. His trek reached New York City, and in Washington, D.C., he met President Theodore Roosevelt. He traveled the Trail again several times in the final two decades of this life, including by oxcart in 1910–1912 and by airplane in 1924. During another such trip, in 1928, Meeker fell ill but was succored by Henry Ford. On his return to Washington state, Meeker became ill again and died there on December 3, 1928, at the age of 97. Meeker wrote several books; his work has continued through the activities of such groups as the Oregon-California Trails Association.\n" +
                         "\n",
+                false,
+                ""
+            ),
+
+
+            ItemPost(
+                "https://cdn.motor1.com/images/mgl/wloA26/s3/volvo-fh-electric.jpg",
+                "Volvo",
+                "Truck manufacturing group",
+               "The Volvo Group appreciates the value of sound corporate governance as a fundamental base in achieving a trusting relation with shareholders and other key parties.\n" +
+                       "The Swedish Corporate Governance Code (Code), applied by the Volvo Group, aims at empowering the shareholders and creating a sound balance of power between shareholders, the board of directors and the senior management.\n" +
+                       "\n" +
+                       "Sound corporate governance, characterized by high standards when it comes to transparency, reliability and ethic values, has always been a well established guiding principle within the Volvo Group's operations.",
                 false,
                 ""
             ),
