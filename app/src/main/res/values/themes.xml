@@ -16,6 +16,6 @@
     </style>
     <style name="MyToolbar" parent="Theme.MaterialComponents">
         <item name="fontFamily">@font/primary_bold</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">22sp</item>
     </style>
 </resources>
