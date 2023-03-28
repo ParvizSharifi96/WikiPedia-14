@@ -7,7 +7,11 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import com.example.wikipedia_14.databinding.ActivityMainBinding
+import com.example.wikipedia_14.fragments.FragmentExplore
+import com.example.wikipedia_14.fragments.FragmentProfile
+import com.example.wikipedia_14.fragments.FragmentTrend
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -71,5 +75,47 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        firstRun()
+
+        binding.bottomNavigationMain.setOnItemSelectedListener {
+
+            when (it.itemId) {
+                R.id.menu_explore -> {
+                    replaceFragment(FragmentExplore())
+                }
+
+                R.id.menu_trend -> {
+                    replaceFragment(FragmentTrend())
+                }
+
+                R.id.menu_profile -> {
+                    replaceFragment(FragmentProfile())
+                }
+            }
+
+            // check menu item off =>
+            binding.navigationViewMain.menu.getItem(1).isChecked = false
+
+            true
+        }
+        binding.bottomNavigationMain.setOnItemReselectedListener {}
+
+
     }
+    private fun replaceFragment(fragment: Fragment) {
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frame_main_container, fragment)
+        transaction.commit()
+
+    }
+
+    private fun firstRun() {
+
+        replaceFragment(FragmentExplore())
+        binding.bottomNavigationMain.selectedItemId = R.id.menu_explore
+
+    }
+
+
 }
