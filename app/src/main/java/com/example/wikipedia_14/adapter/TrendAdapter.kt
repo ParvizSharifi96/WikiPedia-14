@@ -1,4 +1,4 @@
-package ir.dunijet.wikipedia.adapter
+package com.example.wikipedia_14.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +9,7 @@ import com.example.wikipedia_14.data.ItemPost
 import com.example.wikipedia_14.databinding.ItemTrendBinding
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation
 
-class TrendAdapter(val data: List<ItemPost>) :
+class TrendAdapter(val data: List<ItemPost>, val itemEvents: ItemEvents) :
     RecyclerView.Adapter<TrendAdapter.TrendViewHolder>() {
     lateinit var binding: ItemTrendBinding
 
@@ -31,6 +31,12 @@ class TrendAdapter(val data: List<ItemPost>) :
                 .transform(RoundedCornersTransformation(24, 8))
                 .into(binding.imgTrendMain)
 
+
+            itemView.setOnClickListener {
+
+                itemEvents.onItemClicked(itemPost)
+
+            }
 
         }
 
